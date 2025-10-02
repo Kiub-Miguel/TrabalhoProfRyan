@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+      <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-image: url('bibrioteca.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .conteudo {
+      text-align: center;
+      padding-top: 20%;
+    }
+  </style>
+    <meta charset="UTF-8">
+    <title>Biblioteca - Início</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>📚 Sistema de Agendamento da Biblioteca</h1>
+    <a href="/agendar">➕ Novo Agendamento</a><br>
+    <a href="/listar">📋 Ver Agendamentos</a>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Novo Agendamento</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>➕ Novo Agendamento</h1>
+    <form method="post">
+        <label>Usuário:</label><br>
+        <input type="text" name="usuario" required><br><br>
+
+        <label>Livro/Sala:</label><br>
+        <input type="text" name="livro_sala" required><br><br>
+
+        <label>Data:</label><br>
+        <input type="date" name="data" required><br><br>
+
+        <label>Hora:</label><br>
+        <input type="time" name="hora" required><br><br>
+
+        <button type="submit">Agendar</button>
+    </form>
+    <br>
+</body>
+</html>
